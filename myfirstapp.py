@@ -9,7 +9,7 @@ option = st.sidebar.selectbox(
     'Select a mini project',
      ['line chart','map','T n C'])
 
-if show:
+if option=='line chart':
     chart_data = pd.DataFrame(
       np.random.randn(20, 3),
       columns=['a', 'b', 'c'])
