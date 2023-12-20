@@ -15,6 +15,7 @@ if show:
       np.random.randn(20, 3),
       columns=['a', 'b', 'c'])
     st.line_chart(chart_data)
+    
     st.write(pd.DataFrame({
         'Students': ['John', 'Lofa', 'Siti', 'Amy'],
         'Attendance Status': ['yes', 'yes', 'yes', 'no']
