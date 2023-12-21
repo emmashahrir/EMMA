@@ -3,7 +3,7 @@ import pandas as pd
 import seaborn as sns
 import pickle
 
-st.write("# Sales Price Prediction Emma Nurul Auni Sara App")
+st.write("# Sales Price Prediction App")
 st.write("This app predicts the **Sales Price** type!")
 
 st.sidebar.header('User Input Parameters')
@@ -27,5 +27,5 @@ st.write(df)
 loaded_modelSvr = pickle.load(open("Salespred.h5", "rb")) #rb: read binary
 pred = loaded_modelSvr.predict(df)
 
-st.subheader('Sales Price Prediction Emma Nurul Auni Sara')
+st.subheader('Sales Price Prediction')
 st.write(pred)
