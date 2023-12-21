@@ -25,7 +25,7 @@ st.subheader('User Input parameters')
 st.write(df)
 
 loaded_modelSvr = pickle.load(open("Salespred.h5", "rb")) #rb: read binary
-pred = loaded_model.predict(df)
+pred = loaded_modelSvr.predict(df)
 
 st.subheader('Sales Price Prediction Emma')
 st.write(pred)
